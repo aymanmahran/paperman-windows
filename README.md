@@ -7,3 +7,5 @@ This one is compiled with MinGW to work on Windows using windows libraries inste
 - Undo/Redo improved to include more steps.
 - Quick merging by dropping files on each other.
 - Rotating single pages in the side preview menu.
+
+![PM](https://user-images.githubusercontent.com/55334062/133272542-8be336dc-957a-4a67-b638-4358db3e0f1a.jpeg)
