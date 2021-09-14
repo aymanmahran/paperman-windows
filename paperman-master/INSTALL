@@ -1,0 +1,72 @@
+Installation
+------------
+
+Unpack the code into a fresh directory
+
+You will need these packages:
+
+- libqt4-dev
+
+QT4.4 is needed. This is available in various distributions since late 2008.
+
+- libpoppler-qt4-dev
+
+Used for PDF preview
+
+- libpodofo-dev
+
+podofo used to be embedded within the code, but is now available in a
+library. This is used for PDF operations.
+
+- libsane-dev
+
+This is the sane scanner library.
+
+- libtiff5-dev
+
+This is the tiff library
+
+- cmake
+
+This is needed to build podofo
+
+- imagemagick
+- tesseract-ocr
+- tesseract-ocr-eng
+
+These are needed for OCR (Optical Character Recognition).
+
+In summary, to prepare on Debian / Ubuntu:
+
+   sudo apt-get install qtcreator g++ qt4-qmake libqt4-dev libpoppler-qt4-dev \
+         libsane-dev libtiff5-dev cmake libpodofo-dev imagemagick \
+         tesseract-ocr tesseract-ocr-eng
+
+For Red Hat / Centos you will try some other approach similar to the above.
+
+
+To build:
+
+   qmake
+   make
+
+
+But if you have QT3 installed:
+
+$ qmake -v
+Qmake version: 1.07a (Qt 3.3.8b)
+Qmake is free software from Trolltech ASA.
+
+
+then you will need to force QT4:
+
+   qmake-qt4
+   make
+
+That should create something called 'paperman'
+
+./paperman
+
+After you run it, right-click in the left window to add a paper repository with
+the 'Add repository' option. This should be the directory containing your
+paper files.
